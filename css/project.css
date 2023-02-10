@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* HEADER STARTS */
+
+
+header .container{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    box-shadow: 5px 5px 5px 5px silver;
+    padding: 1%;
+    background-color: white;
+    z-index: 2;
+
+}
+nav{
+    flex-grow: 01;
+    text-align:right;
+    margin: 0 auto;
+}
+nav>ul>li {
+    display:inline-block;
+    list-style: none;
+    padding: 2%;
+    color: white;
+    font-size: 1.2rem;
+
+}
+nav li a {
+    text-decoration: none;
+    color: purple;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+nav li a:hover{
+
+    background: linear-gradient(to right, red, purple);
+    color:white;
+    border-radius: 50%;
+    font-weight: bold;
+    padding: 20px;
+    transition:0.5S;
+}
+
+.logo>a>h1{
+    
+    font-family: "Signika Negative", sans-serif;
+    background:-webkit-linear-gradient( red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: big 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes  big{
+    0% { transform: scale(.8); }
+   50% { transform: scale(1); }
+   100% { transform: scale(.8); }
+
+}
+.logo a{
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+#hamburger{
+    display: none;
+}
+.hamburger-icon img{
+    width:30px;
+    cursor: pointer;
+    display: none;
+
+}
+/* HEADER ENDS  */
+
+
+/* HOME STARTS */
+
+#homesection{
+    padding: 100px 0 0;
+   background: linear-gradient(to left, blue, crimson );
+
+}
+.grid{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+.homeimg{
+/* grid-column:span 6; */
+align-self: center;
+transition-property: background-color, transform, border-radius;
+transition-delay: 1s;
+transition-duration: 2s;
+}
+.homeimg:hover{
+    background-color: white;
+    border-radius: 50%;
+    transform:rotate( 360deg);
+    position: relative;
+    /* z-index: -1; */
+}
+.hometext{
+/* grid-column:span 6; */
+align-self: center;
+color: white;
+font-size: 2rem;
+padding: 2%;
+transition-property: background-color, transform, border-radius;
+transition-delay: 1s;
+transition-duration: 2s;
+}
+.hometext:hover{
+transform: scale(0.9);
+}
+.hometext p a img{
+    width: 10%;
+}
+.homeimg img {
+
+    width: 60%;
+}
+.homevidspan{
+
+    color: rgb(25, 116, 228);
+}
+.waveimg{
+    width: 100%;
+    position: relative;
+    top: 7px;
+}
+/* HOME ENDS */
+
+
+    /* SERVICES STARTS HEREE  */
+
+    #servicescontainer{
+        margin-top: 5%;
+        text-align: center;
+        padding: 100px 0 100px;
+        background: linear-gradient(to left, yellow, rgb(22, 206, 83));
+        z-index: 1;position: relative;
+    
+    }
+    .serviceshouse h1 {
+        text-align: center;
+        margin-bottom: 3%;
+        /* background:-webkit-linear-gradient( red, blue); */
+        /* -webkit-background-clip: text; */
+        /* -webkit-text-fill-color: transparent; */
+        color: white;
+        font-size: 3rem;
+  
+    }
+
+.services{
+display: grid;
+grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+gap:30px;
+padding: 2%;
+margin: 2%;
+
+
+}
+.services1,
+.services2,
+.services3{
+    transition-property: all;
+    transition-delay: 0.5;
+    transition-duration:1s;
+}
+.services1:hover,
+.services2:hover,
+.services3:hover{
+   background: linear-gradient(to right, rgb(208, 144, 144), blue, silver);
+    border-radius: 8%;
+    transform: translateY(50px);
+    font-style: italic;
+    color: white;
+}
+.services1 h2{
+    font-size: 2rem;
+    margin: 5%;
+    color: white;
+
+}
+.services2 h2{
+    font-size: 2rem;
+    margin: 5%;
+    color: white;
+
+
+}
+.services3 h2{
+    font-size: 2rem;
+    margin: 5%;
+    color: white;
+
+
+}
+.services1 p{
+
+    font-size: 1.3rem;
+    color:white;
+}
+
+.services2 p{
+
+    font-size: 1.3rem;
+    color:white;
+}
+
+.services3 p{
+
+    font-size: 1.3rem;
+    color:white;
+}
+.servicesbutton>a>button{
+text-transform: capitalize;
+color: white;
+background-color: blue;
+font-size: 2rem;
+border-radius:10px;
+margin-top: 10%;
+width: auto;
+padding:0.9%;
+font-size: 1.2rem;
+}
+
+    /* SERVICES ENDS HERE  */
+
+/* 
+ABOUT STARTS HERE  */
+#aboutcontainer{
+text-align: center;
+padding-top: 70px;
+background: linear-gradient(to right, rebeccapurple, silver);
+
+}
+.abouthouse{
+
+    text-align: center;
+}
+.abouthouse h1{
+
+    text-align: center;
+    color: white;
+        margin-bottom: 3%;
+        background:-webkit-linear-gradient( red, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 3rem;
+}
+.abouthouse h1::before{
+    content: " ";
+    background: coral;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width:400px;
+    transform: translateY(59px);
+
+
+}
+.abouthouse h1::after{
+    content: " ";
+    background-color: coral;
+    height: 20px;
+    margin: auto;
+    display: block;
+    width:30px;
+    border-radius: 80%;
+    margin-bottom: 40px;
+    transform: translateY(-7px);
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    width: 100%;
+    /* border: 2px solid red; */
+    text-align: center;
+    padding: 5%;
+}
+
+.aboutimg{
+    grid-column: span 6;
+    align-self: center;
+    transition: all;
+    transition-property: all;
+    transition-delay: 1s;
+    transition-duration: 2s;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.aboutimg:hover{
+background-color: white;
+border-radius: 50%;
+transform: scale(1.2)
+
+}
+.abouttext {
+    grid-column: span 6;
+    align-self: center;
+    transition: all;
+    transition-property: all;
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+    /* border: 2px solid red; */
+    text-align: center;
+ 
+}
+.abouttext:hover{
+    background: linear-gradient(to left, rgb(50, 88, 199), rgb(29, 184, 101));
+    border-radius: 20%;
+    transform: scale(01.1);
+    
+    }
+.aboutul>ul>li {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+
+}
+.abouth2>h2 {
+    font-size: 2.5rem;
+    margin: 2%;
+    color: white;
+}
+.aboutimg img {
+
+    width: 100%;
+}
+
+.aboutul>ul{
+width: 50%;
+/* border: 2px solid red; */
+text-align: center;
+
+
+}
+
+/* ABOUT ENDS HERE  */
+ 
+
+
+/* CLIENTS TESTIMONIALS STARTS HERE  */
+
+#clientsay{
+
+    background: linear-gradient( to right, grey, crimson);
+}
+.clientsaycontainer{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:30px;
+    padding: 2%;
+    margin: 2%;
+
+}
+.container h2{
+
+    padding-top: 70px;
+    text-align: center;
+   color: white;
+       font-size: 3rem;
+}
+.testimonials{
+    border-left: 5px solid rebeccapurple;
+
+padding:2%;
+margin: auto;
+
+
+}
+.testimonials h3 {
+margin-top: 2%;
+color: white;
+margin-bottom: 5%;
+padding: 5%;
+
+font-size: 1.3rem;
+}
+ 
+.testimonials>img {
+
+    margin: 0 auto;
+    border-radius: 70%;
+    width: 30%;
+    transition: all;
+    transition-property: all;
+    transition-delay: 1s;
+    transition-duration: 2s;
+    
+
+}
+.testimonials>img:hover{
+
+    transform: scale(1.2);
+    transform: translate(95px, 9px);
+}
+
+.testimonials p {
+text-align: center;
+    font-style: italic;
+    align-items: center;
+    color: white;
+    display:block;
+    
+   
+}
+
+
+/*  CLIENTS TESTIMONIALS ENDS HERE*/
+
+/* FIND US STARTS HERE */
+#findus{
+
+    /* border: 2PX SOLID red; */
+    padding: 5%;
+background-color: white;
+    
+}
+
+.finduscontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 4%;
+    margin-top: 2%;
+   
+   
+}
+.finduscontainer>img{
+    width:20%;
+    padding: 4%;
+    transition: all;
+    transition-property: all;
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+    
+}
+.finduscontainer>img:hover{
+
+    transform: scale(1.3);
+}
+.findush2{
+
+    padding-top: 70px;
+    text-align: center;
+   color: rebeccapurple;
+       font-size:1.3rem;
+}
+/* FIND US ENDS HERE */
+
+
+/* contacts starts here  */
+#contact img{
+    width: 100%;
+}
+.contactcontainer{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    text-align: center;
+}
+#contact{
+background: linear-gradient( to left, rebeccapurple, rgb(240, 60, 60));
+
+}
+.contact1 h2 {
+    color: white;
+    text-decoration: underline;
+    padding: 2%;
+     margin-top: 2%;
+     font-size: 2rem;
+     text-align: center;
+
+
+}
+.contact1 p {
+    color: white;
+    text-align: center;
+    margin: 2%;
+    font-size: 1.3rem;
+}
+.contact2 h2 {
+    color: white;
+    padding: 2%;
+     margin-top: 2%;
+     font-size: 2rem;
+     text-align: center;
+    }
+    
+.contact2>ul>li {
+    color: white;
+    text-align: center;
+    margin: 1%;
+    font-size: 1.3rem;
+    list-style: none;
+    text-decoration: none;
+    padding: 2%;
+
+}
+
+
+.contact3 h2 {
+    color: white;
+    padding: 2%;
+     margin-top: 2%;
+     font-size: 2rem;
+     text-align: center;
+}
+.contactinput{
+width: 50%;
+border-radius: 11px;
+height: 15%;
+padding-left: 2%;
+margin: 3%;
+
+}
+.contact3>a>button {
+
+    font-size: 1.5rem;
+    text-align: center;
+    background: linear-gradient(to left, red, blue);
+    color: white;
+    width: 30%;
+    height:15%;
+    border-radius: 10px;
+}
+i{
+    padding: 2%;
+}
+.footerborder{
+border-top: 7px dotted white;
+margin: 2%;
+
+}
+.footerend{
+
+    text-align: center;
+    width: 100%;
+    color: white;
+  
+}
+/* contacts ends here  */
+
+@media  only screen and (max-width:991px){
+.logo>a>h1{
+    font-size: 2rem;
+}
+nav ul {
+    top:0;
+    position: fixed;
+    background:white;
+    left:-100%;
+    width: auto;
+    height: 100%;
+    opacity:1;
+    border-radius: 10%;
+ 
+    transition: all 1s ease-in-out;
+}
+
+nav>ul>li{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 40px;
+}
+
+.hamburger-icon img{
+    display: block;
+}
+#hamburger:checked ~ ul{
+    left: 0;
+}
+.grid{
+    padding: 2%;
+    margin: 4%;
+}
+.homeimg img {
+    width: 90%;
+}
+.services {
+    margin: 5%;
+    
+}
+.services1:hover{
+    transform: scale(0.8);
+}
+.services2:hover{
+    transform: scale(0.8);
+}
+
+.services3:hover{
+    transform: scale(0.8);
+}
+.about{
+    text-align: center;
+    align-items: center;
+}
+.aboutul{
+    text-align: center;
+    align-items: center;
+}
+.aboutul>ul>li {
+    font-size: 1.2rem;
+   
+    text-align: center;
+}
+.aboutimg{
+    grid-column: span 12;
+}
+.abouttext{
+    grid-column: span 12;
+    text-align: center;
+    align-self: center;
+}
+}
